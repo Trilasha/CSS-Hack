@@ -1,0 +1,110 @@
+/* NAVBAR */
+.navbar{
+    border: 2px solid;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+}
+.list ul{
+    display: flex;
+}
+.list li{
+    padding: 20px;
+}
+
+/* homeImage */
+.homeImage{
+    display: flex;
+    background-image: url(https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80) ;
+    background-position-y: -265px;
+    height: 500px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.homeImage h1{
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    text-align: center;
+}
+/* Article Cards */
+.ArCards{
+    
+    display: flex;
+    margin: 2%;
+    justify-content: center;
+}
+.ArCards >div{
+    height: 100px;
+    width: 300px;
+    border: 2px solid;
+    border-style: dotted;
+    margin: 1%;
+    
+}
+/* Facilities */
+.facility{
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(253, 235, 238);
+}
+.facility >div{
+    background-color: rgb(195, 249, 249);
+    border: 2px solid;
+    border-style: dashed;
+    height: 400px;
+    width: 200px;
+    margin:2%;
+    padding: 2%;
+
+}
+
+/* Login Form  */
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+
+
+}
+.form h1{
+    font-size: 70px;
+}
+input {
+    border: 2px solid #6363ff;
+    height: 40px;
+    width: 18rem;
+    margin: 0.3rem;
+    font-size: 19px;
+    border-radius: 6px;
+}
+
+#emailTab {
+    width: 37.5rem;
+}
+
+textarea {
+    border: 2px solid #6363ff;
+    width: 18rem;
+    height: 14rem;
+    margin: 0.3rem;
+    font-size: 19px;
+    border-radius: 6px;
+    width: 37.5rem;
+}
+
+#submitBtn {
+    width: 9.5rem;
+    height: 3rem;
+    color: white;
+    background-color: rgb(60 100 177);
+}
+/* footer */
+footer{
+    height: 100px;
+    background-color: rgb(252, 221, 255);
+    
+}
