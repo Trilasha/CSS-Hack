@@ -1,15 +1,40 @@
+*{
+    margin: 0;
+}
 /* NAVBAR */
 .navbar{
-    border: 2px solid;
-    display: flex;
-    height: 70px;
-    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 75px;
+    justify-content: center; 
+    align-items: center;
+    box-shadow: 0px 10px 15px -13px rgba(0,0,0,0.1);
 }
+.logo img{
+    height: 5rem;
+    margin-top: -7px;
+}
+
 .list ul{
     display: flex;
+    justify-content: center;
 }
 .list li{
     padding: 20px;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 1000;
+
+}
+.navbar button{
+    margin-left: 50%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
 }
 
 /* homeImage */
@@ -20,45 +45,167 @@
     height: 500px;
     width: 100%;
     align-items: center;
-    justify-content: center;
+  
+
+}
+.homeImage img{
+    
+    width: 100%;
+    
+}
+.homeImage p{
+    width: 30%;
+    position: absolute;
+    left: 7%;
+    top: 40%;
+    font-size: 1.7rem;
+    color: rgb(18, 27, 18);
+    text-shadow: 4px 2px 2px rgba(206,203,200,0.64);
 
 }
 .homeImage h1{
+    position: absolute;
+    padding: 3%;
     color: rgb(0, 0, 0);
     font-size: 100px;
-    text-align: center;
+    color: rgb(182, 247, 182);  
+    text-shadow: 4px 2px 2px rgba(206,203,200,0.64);
 }
+
+/* Intro Section */
+.intro{
+    height: 400px;
+    margin-top: 240px;
+    padding: 5%;
+}
+.intro img{
+    height: 400px;
+    float: left;
+    margin-right: 3%;
+}
+.intro h1{
+    font-size: 3rem;
+}
+.intro p{
+    padding: 3%;
+    font-size: 1.8rem;
+    
+}
+
+
 /* Article Cards */
 .ArCards{
     
     display: flex;
-    margin: 2%;
+   padding: 2%;
+   height: 400px;
     justify-content: center;
+    background-color: #f4f4f4;
 }
-.ArCards >div{
-    height: 100px;
-    width: 300px;
-    border: 2px solid;
-    border-style: dotted;
-    margin: 1%;
+#ArCardHead{
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    background-color: #f4f4f4;
+    padding: 2%;
+    text-align: center;
     
 }
-/* Facilities */
-.facility{
-    border: 2px solid;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(253, 235, 238);
-}
-.facility >div{
-    background-color: rgb(195, 249, 249);
-    border: 2px solid;
-    border-style: dashed;
-    height: 400px;
+.ArCards button{
+    height: 200px;
     width: 200px;
-    margin:2%;
-    padding: 2%;
+    margin: 1%;
+    box-shadow: none;
+    border: 0;    
+}
+.ArCards Button:hover{
+    transform: scale(1.1);
+    border: 2px solid rgb(84, 168, 84);
+    border-radius: 20px;
+}
+#loan{
+    background-image: url(1loan.png);
+    background-size: cover;
+    height: 278px;
+    width: 304px;
+}
+#storage{
+    background-image: url(3storage.png);
+    background-size: cover;
+    height: 278px;
+    width: 304px;
 
+}
+#articles{
+    background-image: url(4Articles.png);
+    background-size: cover;
+    height: 278px;
+    width: 304px;
+
+}
+#schemes{
+    background-image: url(2schemes.png);
+    background-size: cover;
+    height: 278px;
+    width: 304px;
+}
+
+/* store */
+#store{
+    background-color: rgb(238, 251, 225);
+    height: 1000px;
+}
+#store h1{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 2%;
+    
+
+}
+#shopCard{
+	box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 300px;
+	width: 700px;
+	
+}
+.product {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+
+}
+.btn {
+	background:  #809fff;
+	cursor: pointer;
+	border: none;
+	border-radius:20px;
+	color: #eee;
+	padding: 0;
+	margin: 0;
+	
+}
+.btn span {
+	font-family: 'Farsan', cursive;
+	display: inline-block;
+  padding: 10px 20px;
+	font-size: 1.2em;
+	margin:0;
+	
+}
+.productImg 
+{
+	position: relative;
+	height: 100%;
+	float: right;
+	width: 45%;
 }
 
 /* Login Form  */
@@ -102,6 +249,8 @@ textarea {
     color: white;
     background-color: rgb(60 100 177);
 }
+
+
 /* footer */
 footer{
     height: 100px;
