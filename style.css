@@ -1,36 +1,40 @@
-*{
+* {
     margin: 0;
 }
+
 /* NAVBAR */
-.navbar{
+.navbar {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     height: 75px;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    box-shadow: 0px 10px 15px -13px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 15px -13px rgba(0, 0, 0, 0.1);
 }
-.logo img{
+
+.logo img {
     height: 5rem;
     margin-top: -7px;
 }
 
-.list ul{
+.list ul {
     display: flex;
     justify-content: center;
 }
-.list li{
+
+.list li {
     padding: 20px;
     list-style: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 1000;
 
 }
-.navbar button{
+
+.navbar button {
     margin-left: 50%;
     border-radius: 50%;
     height: 50px;
@@ -38,111 +42,127 @@
 }
 
 /* homeImage */
-.homeImage{
+.homeImage {
     display: flex;
-    background-image: url(https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80) ;
-    background-position-y: -265px;
     height: 500px;
     width: 100%;
     align-items: center;
-  
+
 
 }
-.homeImage img{
-    
+
+.homeImage img {
+
     width: 100%;
-    
+    opacity: 0.85;
+
+
 }
-.homeImage p{
+
+.homeImage p {
     width: 30%;
     position: absolute;
+    z-index: 1;
     left: 7%;
     top: 40%;
     font-size: 1.7rem;
     color: rgb(18, 27, 18);
-    text-shadow: 4px 2px 2px rgba(206,203,200,0.64);
+    text-shadow: 4px 2px 2px rgba(206, 203, 200, 0.64);
 
 }
-.homeImage h1{
+
+.homeImage h1 {
     position: absolute;
+    z-index: 1;
     padding: 3%;
     color: rgb(0, 0, 0);
     font-size: 100px;
-    color: rgb(182, 247, 182);  
-    text-shadow: 4px 2px 2px rgba(206,203,200,0.64);
+    color: rgb(156, 204, 156);
+    text-shadow: 4px 2px 2px rgba(241, 143, 44, 0.64);
 }
 
 /* Intro Section */
-.intro{
+.intro {
     height: 400px;
     margin-top: 240px;
     padding: 5%;
 }
-.intro img{
+
+.intro img {
+    border-radius: 50%;
     height: 400px;
     float: left;
     margin-right: 3%;
 }
-.intro h1{
+
+.intro h1 {
     font-size: 3rem;
 }
-.intro p{
+
+.intro p {
     padding: 3%;
     font-size: 1.8rem;
-    
+
 }
 
 
 /* Article Cards */
-.ArCards{
-    
+.ArCards {
+
     display: flex;
-   padding: 2%;
-   height: 400px;
+    padding: 2%;
+    height: 400px;
     justify-content: center;
     background-color: #f4f4f4;
 }
-#ArCardHead{
+
+#ArCardHead {
     font-size: 3rem;
     font-family: 'Raleway', sans-serif;
     background-color: #f4f4f4;
     padding: 2%;
     text-align: center;
-    
+
 }
-.ArCards button{
+
+.ArCards button {
     height: 200px;
     width: 200px;
     margin: 1%;
     box-shadow: none;
-    border: 0;    
+    border: 0;
 }
-.ArCards Button:hover{
+
+.ArCards Button:hover {
     transform: scale(1.1);
     border: 2px solid rgb(84, 168, 84);
     border-radius: 20px;
 }
-#loan{
+
+#loan {
     background-image: url(1loan.png);
     background-size: cover;
     height: 278px;
     width: 304px;
 }
-#storage{
+
+#storage {
     background-image: url(3storage.png);
     background-size: cover;
     height: 278px;
     width: 304px;
 
 }
-#articles{
+
+#articles {
     background-image: url(4Articles.png);
     background-size: cover;
     height: 278px;
     width: 304px;
 
 }
-#schemes{
+
+#schemes {
     background-image: url(2schemes.png);
     background-size: cover;
     height: 278px;
@@ -150,66 +170,225 @@
 }
 
 /* store */
-#store{
+#store {
     background-color: rgb(238, 251, 225);
     height: 1000px;
+
 }
-#store h1{
+
+#store h1 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     padding: 2%;
-    
+
 
 }
-#shopCard{
-	box-shadow: 0 15px 30px 1px grey;
-	background: rgba(255, 255, 255, 0.90);
-	text-align: center;
-	border-radius: 5px;
-	overflow: hidden;
-	margin: 5em auto;
-	height: 300px;
-	width: 700px;
-	
-}
-.product {
-	position: relative;
-	text-align: left;
-	overflow: hidden;
-	padding: 30px;
-	height: 100%;
-	float: left;
-	width: 40%;
+
+.storeCard {
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.90);
+    overflow: hidden;
+    margin: 5em auto;
+    height: 300px;
+    width: 700px;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
 
 }
+
+.storeCard:hover {
+    margin-left: 25%;
+    box-shadow: -19px 22px 15px -2px #8585ad;
+
+}
+
+#details {
+    text-align: left;
+
+    padding: 30px;
+    height: 100%;
+    width: 40%;
+
+}
+
+.productImage img {
+    width: 331px;
+    margin-left: 9%;
+}
+
+#details h2 {
+    font-size: 1.5rem;
+}
+
+#details p {
+    margin-top: 3%;
+}
+
 .btn {
-	background:  #809fff;
-	cursor: pointer;
-	border: none;
-	border-radius:20px;
-	color: #eee;
-	padding: 0;
-	margin: 0;
-	
+    background: #679a57;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    color: #eee;
+    padding: 0;
+    margin: 5%;
+
+
 }
+
 .btn span {
-	font-family: 'Farsan', cursive;
-	display: inline-block;
-  padding: 10px 20px;
-	font-size: 1.2em;
-	margin:0;
-	
+    font-family: 'Farsan', cursive;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 0;
+
 }
-.productImg 
-{
-	position: relative;
-	height: 100%;
-	float: right;
-	width: 45%;
-}
+
+
 
 /* Login Form  */
-.form{
+
+
+
+/* footer */
+footer {
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    padding: 3%;
+    font-size: 1rem;
+    list-style: none;
+    color: rgb(255, 255, 255);
+}
+
+footer button {
+    background-color: black;
+    width: 120px;
+    margin: 2%;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+footer button:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+footer li:hover {
+    color: black;
+}
+
+/* Articles */
+.articles h1 {
+    text-align: center;
+
+}
+
+.articles h2 {
+    text-align: center;
+    color: rgb(61, 53, 53);
+    margin-top: -3%;
+}
+
+#aCards {
+    display: flex;
+    justify-content: center;
+}
+
+.cards img {
+    width: 20rem;
+}
+
+.articles h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 4%;
+    margin-left: 4%;
+
+}
+
+#aCards {
+    display: flex;
+    padding: 5%;
+    margin-left: 2%;
+    margin-top: -3%;
+}
+
+#aCards button {
+    background-color: #679a57;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 14px;
+    margin: 2%;
+
+}
+
+#aCards button:hover {
+    background-color: #69a357;
+}
+
+.cards {
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(250, 250, 250);
+    color: rgb(141, 141, 141);
+    padding: 20px;
+    margin: 10px;
+    width: 26%;
+}
+
+.cards h2 {
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 100;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cards p {
+    font-size: 20px;
+
+}
+
+/* login form */
+#loginBox{
+    padding: 3%;
+}
+#login{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    border-radius: 10px;
+    box-shadow: -8px 16px 15px -3px rgba(0,0,0,0.1),5px -7px 15px -3px rgba(0,0,0,0.1);
+    
+}
+#login >div{
+    
+    height: 700px;
+    
+}
+#loginImage img{
+    width: 150%;
+    margin-left: -21%;
+
+}
+#loginImage{
+    overflow: hidden;
+}
+.form {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -217,43 +396,38 @@
 
 
 }
-.form h1{
+
+.form h1 {
     font-size: 70px;
 }
+
 input {
     border: 2px solid #6363ff;
-    height: 40px;
-    width: 18rem;
+    height: 20px;
+    width: 17rem;
     margin: 0.3rem;
     font-size: 19px;
     border-radius: 6px;
 }
 
-#emailTab {
+.emailTab {
     width: 37.5rem;
+}
+.emailTab div{
+    border: 2px solid blue;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+   
 }
 
-textarea {
-    border: 2px solid #6363ff;
-    width: 18rem;
-    height: 14rem;
-    margin: 0.3rem;
-    font-size: 19px;
-    border-radius: 6px;
-    width: 37.5rem;
-}
+
+
 
 #submitBtn {
     width: 9.5rem;
     height: 3rem;
     color: white;
     background-color: rgb(60 100 177);
-}
-
-
-/* footer */
-footer{
-    height: 100px;
-    background-color: rgb(252, 221, 255);
-    
 }
