@@ -79,6 +79,7 @@
     font-size: 100px;
     color: rgb(156, 204, 156);
     text-shadow: 4px 2px 2px rgba(241, 143, 44, 0.64);
+    margin: 25px 34px;
 }
 
 /* Intro Section */
@@ -365,7 +366,7 @@ footer li:hover {
 
 /* login form */
 #loginBox{
-    padding: 3%;
+    padding: 7%;
 }
 #login{
     display: grid;

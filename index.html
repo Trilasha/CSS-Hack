@@ -16,21 +16,99 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
 </head>
+<style>
+.list li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+.list li a{
+    text-decoration: none;
+}
 
+    /* .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+
+
+}
+.form h1 {
+    font-size: 70px;
+}
+
+input {
+    border: 2px solid #6363ff;
+    height: 20px;
+    width: 17rem;
+    margin: 0.3rem;
+    font-size: 19px;
+    border-radius: 6px;
+} */
+ /* Login Form 
+    <div id="loginBox">
+        <div id="login">
+            <div id="loginImage">
+                <img src="signupImage.jpg" alt="loading">
+            </div> */
+ /* <div class="form">
+                <h1>Sign Up</h1>
+                <form action="" id="contactForm">
+                    <span><input type="text" placeholder="First name"></span>
+                    <span><input type="text" placeholder="Last name"></span>
+                    <div class="emailTab"><input type="email" placeholder="Email"></div>
+                    <div class="emailTab"><input type="text" placeholder="Phone"></div>
+                    <input type="submit" id="submitBtn">
+                </form>  */
+                .container{
+        border: 2px solid white;
+        margin: 70px 29px;
+        margin-left: 45px;
+       padding: 70px 40px;
+       padding-top: 15px;
+       padding-bottom: 21px;
+       width: 75%;
+       border-radius: 28px;
+    }
+    .form-group input{
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        display: block;
+        width:350px;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 7px auto;
+        font-size: 19px;
+        border-radius: 9px;
+    }
+    .container h1{
+    text-align: center;
+    }
+    .container .btn{
+       text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 365px;
+        margin: auto;
+        margin-top: 18px;
+    }
+</style>
 <body>
     <!-- navigation bar -->
     <div class="navbar">
 
         <div class="logo">
-            <img src="img20.jpg" alt="logo">
+            <img src="logonew1.png" alt="logo">
         </div>
         <div class="list">
             <ul>
-                <li>Home</li>
-                <li>Store</li>
-                <li>Schemes</li>
-                <li>Forums</li>
+                <li><a href="" target="blank" class="active">Home</a></li>
+                <li><a href="https://vikaspedia.in/agriculture/market-information/market-information-related-websites" target="blank">Market Info</a></li>
+                <li><a href="https://agricoop.nic.in/en/ministry-major-schemes" target="blank">Schemes</a></li>
+                <li><a href="https://www.fao.org/e-agriculture/forum" target="blank">Forums</a></li>
 
             </ul>
         </div>
@@ -231,7 +309,7 @@
                 <img src="signupImage.jpg" alt="loading">
             </div>
 
-            <div class="form">
+            <!-- <div class="form">
                 <h1>Sign Up</h1>
                 <form action="" id="contactForm">
                     <span><input type="text" placeholder="First name"></span>
@@ -239,7 +317,33 @@
                     <div class="emailTab"><input type="email" placeholder="Email"></div>
                     <div class="emailTab"><input type="text" placeholder="Phone"></div>
                     <input type="submit" id="submitBtn">
-                </form>
+                </form> -->
+                <div class="container">
+                    <h1>Sign Up to join the global community</h1>
+                    <form action="noaction.php">
+                        <div class="form-group">
+                            <input type="text" name="" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                           <input type="text" name="" placeholder="Enter your age">
+                       </div>
+                       <div class="form-group">
+                           <input type="text" name="" placeholder="Enter your gender">
+                       </div>
+                       <div class="form-group">
+                           <input type="text" name="" placeholder="Enter your locality">
+                       </div>
+                       <div class="form-group">
+                           <input type="text" name="" placeholder="Enter your contact number">
+                       </div>
+                       <div class="form-group">
+                           <input type="text" name="" placeholder="Enter your emailID">
+                       </div>
+                    <button class="btn">Submit</button>
+                    </form>
+                   
+                  
+                   </div>
 
 
             </div>
