@@ -265,8 +265,8 @@ h1{
 .btn span {
     font-family: 'Farsan', cursive;
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.2em;
+    padding: 40px 20px;
+    font-size: 1.0em;
     margin: 0;
 
 }
@@ -345,7 +345,7 @@ footer li:hover {
 #aCards {
     display: flex;
     padding: 5%;
-    margin-left: 2%;
+    margin-left:  2%;
     margin-top: -3%;
 }
 .imgBox{
@@ -353,7 +353,7 @@ footer li:hover {
     height: 200px;
     width: 340px;
     overflow: hidden;
-    margin-left: -6px;
+    margin-left: -14px;
 }
 .imgBox img{
     width: 100%;
